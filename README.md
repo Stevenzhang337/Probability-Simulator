@@ -1,13 +1,11 @@
 # Probability-Simulator
 
-Created: November 2020
-
-https://stevenzhang337.github.io/Probability-Simulator/
-
 I like to think of this as my third installment of my math apps. 
 While I was taking probability this past semester, I found myself simulating a lot of trials on random variables in order to confirm my answers for the class. As a result, I decided that I could build a web app that does just that. I took what I learned from my previous math app project and I applied it to this project.
 This app can simulate famous probability distributions like the normal, binomial, geometric, poisson and more. It can also simulate transformation of these distributions with common math operations like exponetial, logs, and trigonometric functions. It make plots of these distributions (including transformed distribution) through simulated trials. Lastly, it can also calculate expected value, variance and probability.
 This is a simple static web app that uses mathlib to help plot and make graphs. It was a simple project but it shows my progress in learning about web development.
+
+https://stevenzhang337.github.io/Probability-Simulator/
 
 <br>
 Starting page
