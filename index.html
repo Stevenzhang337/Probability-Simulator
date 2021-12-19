@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Probability Simulator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="header">
+            <img style="margin: 10px" src="logo.png" alt="logo" width="100">
+        </div>
+
+        <div class="row">
+            <div class="column1">
+                <h5 style="text-align: center">Simulation of Random Variables:</h5>
+                <p id="description">Pick and choose any of the random variables and the program 
+                   will generate a real number base from their corresponding 
+                   distributions</p>
+
+                <div id="scrollTable">
+                    <table id="valueTable">
+                        <thead>
+                            <th>#</th>
+                            <th>Value</th>
+                        </thead>
+                        <thead>
+                        </thead>
+
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <br>
+                <div>
+                    <button id="reset">Reset</button>
+                    <button id="plot">Plot</button>
+                    <button id="plotCul">Plot Culmuative</button>
+                </div>
+
+            </div>
+            <div class="column2">
+                <h4 style="text-align: center">Discrete Random Variables</h4>
+                <div class="buttonClass">
+                    <button class="RVButton" id="uniformD">
+                        Uniform(a, b)
+                    </button>
+                    <button class="RVButton" id="binomial">
+                        Binomial(n, p)
+                    </button>
+                    <button class="RVButton" id="geometric">
+                        Geometric(p)
+                    </button>
+                    <button class="RVButton" id="poisson">
+                        Poisson(&lambda;)
+                    </button>
+                </div>
+
+                <h4 style="text-align: center">Continous Random Variables</h4>
+                <div class="buttonClass">
+                    <button class="RVButton" id="uniformC">
+                        Uniform(a, b)
+                    </button>
+                    <button class="RVButton" id="normal">
+                        Normal(&mu;, &sigma;)
+                    </button>
+                    <button class="RVButton" id="exponential">
+                        Exponential(&lambda;)
+                    </button>
+                </div>
+                <h4 style="text-align: center">Mathematical Operations/Functions</h4>
+                <div class="buttonClass">
+                    <button class="RVButton" id="power">
+                        ^
+                    </button>
+                    <button class="RVButton" id="sqrt">
+                        sqrt()
+                    </button>
+                    <button class="RVButton" id="log">
+                        ln()
+                    </button>
+                    <button class="RVButton" id="sin">
+                        sin()
+                    </button>
+                    <button class="RVButton" id="cos">
+                        cos()
+                    </button>
+                    <button class="RVButton" id="tan">
+                        tan()
+                    </button>
+                    <button class="RVButton" id="e">
+                        e
+                    </button>
+                    <button class="RVButton" id="pi">
+                        &pi;
+                    </button>
+                </div>
+                <br>
+
+                <div id="display">
+                        <div class="displayContent">
+                            <form class="mathContent">
+                                X = 
+                            </form>
+                            <input type="text" class="mathContent" id="mathDisplay" size="50" value="">
+                        </div>
+                        <div class="displayContent">
+                            <button class="evalButton" id="eval">Evaluate</button>
+                            <button class="evalButton" id="eval20">Evaluate 20</button>
+                            <button class="evalButton" id="eval100">Evaluate 100</button>
+                        </div>
+                        <div class="displayContent">
+                            <p id="show"></p>
+                        </div>
+                        <div id="plotGraph" height="30px"></div>
+
+                </div>
+            </div>
+            <div class="column3">
+                <h4 style="text-align: center">Expected Value and Variance</h4>
+                <p class="stats" id="EV">E(X) <button id="EVButton">Approx EV</button></p> 
+                <p class="stats" id="Var">Var(X) <button id="VarButton">Approx Var</button></p>
+                <button id="approxProb">Approx Probabality</button>
+                <p class="stats" id="prob">P[X = k] </p>
+                <input type="range" min="0" max="0" value="0" id="slider"> 
+                <p class="stats" id="prob1">P[X < k] </p>
+                <input type="range" min="0" max="0" value="0" id="slider1"> 
+            </div>
+        </div>
+
+
+
+
+    </body>
+    <script src="probability.js"></script>
+    <script src="display.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src="plot.js"></script>
+</html>
